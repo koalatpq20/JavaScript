@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="file" id="file"/>
+    <button type="submit" id="btnSubmit">Submit</button>
+    
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", uploadFile);
+
+        function uploadFile(e) {
+            e.preventDefault();
+
+            var frmData = new FormData();
+            var inputFile = document.getElementById("file");
+
+            frmData.append("userfile", inputFile.files[0]);
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "upload.php", true);
+            xhr.send(frmData);
+        }
+    </script>
+
+</body>
+</html>

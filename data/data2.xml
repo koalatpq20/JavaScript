@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--https://www.w3schools.com/xml/note.xml-->
+<notes>
+	<note>
+		<to>Tove</to>
+		<from>Jani</from>
+		<heading>Reminder</heading>
+		<body>Don't forget me this weekend!</body>
+	</note>	
+	<note>
+		<to>Sydney</to>
+		<from>Saigon</from>
+		<heading>Reminder</heading>
+		<body>Don't forget me this weekend!</body>
+	</note>
+</notes>

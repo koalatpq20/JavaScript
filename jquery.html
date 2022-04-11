@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery Example</title>
+
+    <style>
+        .border-1 {
+            border:solid 2px blue;
+        }
+        .border-2 {
+            border: solid 2px red;
+        }
+        .background1 {
+            background: #00ffff;
+        }
+        .background2 {
+            background: #f79ec4;
+        }
+    </style>
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            $('#div1').addClass('border-1');
+
+            var listObject = [{ name: "Jane", age: 30 }, { name: "John", age: 25 }, { name: "Norra", age: 28 }];
+
+            $(listObject).each((item, element) => {
+                alert(element.name);
+            });
+
+            $('#table1 tr').odd().addClass('background1');
+            $('#table1 tr').even().addClass('background2');
+
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">This is div1 zone</div>
+
+    <table id="table1">
+        <tr><td>Column 1 row 1</td><td>Microsoft</td></tr>
+        <tr><td>Column1 row2 </td><td>Tesla</td></tr>
+        <tr><td>Column1 row 3</td><td>Sun Micro System</td></tr>
+        <tr><td>Column1 row 4</td><td>Oracle</td></tr>
+    </table>
+</body>
+</html>
