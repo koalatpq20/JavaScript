@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button type="button" id="btnClear">Clear Storage</button>
+
+    <script>
+        localStorage.setItem("breakfast", "cereal");
+        console.log(localStorage.getItem("breakfast"));
+     
+        sessionStorage.setItem("sesItem1", 10);
+        console.log(sessionStorage.getItem("sesItem1"));
+
+
+        document.cookie = "username=John Doe; expires= Fri, 31 Dec 9999 23:59:59 GMT; path =/";
+
+
+        function clearStorage() {
+            localStorage.removeItem("breakfast");
+            localStorage.clear();
+
+            sessionStorage.removeItem("sesItem1");
+            sessionStorage.clear();
+
+            //remove cookie
+            document.cookie = "username=John Doe; expires= Fri, 31 Dec 1970 23:59:59 GMT; path =/";
+
+        }
+
+        document.getElementById("btnClear").addEventListener("click",clearStorage);
+
+    </script>
+</body>
+</html>
