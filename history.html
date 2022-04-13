@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>History object</title>
+</head>
+    
+<body>
+    <button type="button" id="btnGoogle" onclick="alert(window.history.length);">History Entry</button>
+    <button type="button" id="btnReplace" onclick="replace()">Replace</button>
+    <button type="button" id="btnPush" onclick="pushState()">Push State</button>
+
+
+    <button type="button" id="btnBack" onclick="history.back()">Backward</button>
+    <button type="button" id="btnForward" onclick="history.forward()">Forward</button>
+
+    <input type="text" id="txtPage" />
+    <button type="button" id="btnGo" onclick="goToPage()">Go to Page</button>
+
+
+    <script>
+        function replaceState() {
+            history.replaceState("Data", null, "jquery.html");
+        }
+
+        function goToPage() {
+            var page = document.getElementById("txtPage").value;
+            history.go(page);
+        }
+
+        function replace() {
+            history.replaceState("Data", null, "jquery.html");
+        }
+
+        function pushState() {
+            var object = { data: "promise" }
+            var url = "promise.html";
+
+            history.pushState(object, '', url);
+        }
+
+    </script>
+
+    <!--
+    Window.History object
+
+
+    -->
+
+</body>
+</html>
