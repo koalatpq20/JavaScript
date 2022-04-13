@@ -48,8 +48,17 @@
 
     <!--
     Window.History object
+        history.back()
+        history.forward()
+        history.go(0 | -1 | 1)
 
+        //history entry not change, not load page
+        replaceState(objectState, unused, url)
 
+        //add new history entry, not load page
+        pushState(ObjectState, unused, url)
+
+        window.onppopstate event
     -->
 
 </body>
