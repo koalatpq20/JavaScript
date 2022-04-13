@@ -1,7 +1,7 @@
 // JavaScript source code
 //export const capitalizeString = str => { return str.toUpperCase(); }
 
-const capitalizeString = str => { return str.toUpperCase(); }
+const capitalizeString = (str) => { return str.toUpperCase(); }
 
 let Employee = {
     "name": "Jane",
