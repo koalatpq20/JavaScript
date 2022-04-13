@@ -38,7 +38,11 @@
             var url = "promise.html";
 
             history.pushState(object, '', url);
-        }
+        }        
+
+        window.onpopstate = function (event) {
+            console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
+        };
 
     </script>
 
