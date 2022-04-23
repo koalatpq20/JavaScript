@@ -4,17 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <title>Fetch API</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.js"></script>
     <script src="./js/angular.js"></script>
 
 </head>
 <body ng-controller="introCtrl">
-    <div >{{Person.name}}</div>
+    <div ng-view=""></div>
+    <div >{{Person.name | uppercase}}</div>
     <input type="text" ng-model="Person.name"/>
-    <div>Friends
+    <br/>
+    <div>Friends <input type="text" ng-model="nameFriend"/>
         <ul>
-            <li ng-repeat='friend in Person.friends'>{{friend}}</li>
+            <li ng-repeat='friend in Person.friends | orderBy:"name" | filter:nameFriend'>{{friend.name}}</li>
         </ul>
     </div>    
+    <a href="#!/v2">View2</a>
 </body>
 </html>
