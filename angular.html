@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <title>Fetch API</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="./js/angular.js"></script>
+
+</head>
+<body ng-controller="introCtrl">
+    <div >{{Person.name}}</div>
+    <div>Friends
+        <ul>
+            <li ng-repeat='friend in Person.friends'>{{friend}}</li>
+        </ul>
+    </div>    
+</body>
+</html>
