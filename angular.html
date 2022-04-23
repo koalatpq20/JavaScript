@@ -10,6 +10,7 @@
 </head>
 <body ng-controller="introCtrl">
     <div >{{Person.name}}</div>
+    <input type="text" ng-model="Person.name"/>
     <div>Friends
         <ul>
             <li ng-repeat='friend in Person.friends'>{{friend}}</li>
