@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Services</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.js"></script>
+    <script src="./js/angularProvider.js"></script>
+
+</head>
+<body>
+    <div ng-controller="myController" style="background-color: rgb(248, 248, 200);">
+        {{msgProvider}} - {{msgFactory}} 
+        - {{msgService}} - {{msgValue}}</div>
+    <div ng-controller="myController2">{{msgProvider}} - {{msgFactory}} - {{msgService}} - {{msgValue}}</div>
+</body>
+</html>
