@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<htm>
+<head>
+
+    <!--Meta tag - google lookup-->
+    <meta name="description" content="CSS example" />
+    <meta name="keywords" content="css, code example"/>
+    <meta charset="utf-8" />
+    <title>CSS Example</title>
+
+    <link rel="stylesheet" href="./css/style.css"/>
+
+    <style>
+        /* Reset all element */
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+
+        div{
+            color: #f09f09;
+            
+            /* unit em, rem for repsonsive */
+            line-height: 1.5em;
+
+            /* border-left-style: solid;
+            border-left-width: 5px;
+            border-left-color: #784e01; */
+            border-left: solid 5px #784e01;
+
+            /* border-right: solid 5px #784e01;
+            border-bottom: solid 5px #784e01;
+            border-top: solid 5px #784e01; */
+            border: solid 2px #784e01;
+            
+            /*padding: top-bottom left-right */
+            padding: 0px 5px;
+            margin: 5px 0px;
+        }
+        
+        .text{
+            text-decoration: underline;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            word-spacing: 0.5em;
+            text-align: center;
+
+            /* font-family: 'Tahoma', 'Courier New', 'Arial';
+            font-size: 16px;
+            font-weight: bold; */
+            font: bold 16px Tahoma;
+
+        }
+
+        .color1{
+            color: rgb(0, 131, 68);
+        }
+
+        .container{
+            width: 80%;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="color1 container" style="color:blue;">CSS Example</div>
+    <div class="container text">
+        <p>
+            I was driving by Olaf's bakery on my way to work when I saw the most delicious donut in the window --
+            I mean, the thing was dripping chocolatey goodness. So I went inside and demanded "I must have that donut!".
+            He said "sure that will be $30."
+        </p>
+    </div>
+    <div class="categories">
+        <ul>
+            <li>Category 1 <label>Label1</label><input type="text"/></li>
+            <li>Category 2 <label>Label2</label><input type="button" value="Submit"/></li>
+            <li>Category 3</li>
+            <li>Category 4</li>
+        </ul>
+    </div>
+
+    <div class="block">
+        <p>
+            I was driving by Olaf's bakery on my way to work when I saw the most delicious donut in the window --
+            I mean, the thing was dripping chocolatey goodness. So I went inside and demanded "I must have that donut!".
+            He said "sure that will be $30."
+        </p>
+    </div>
+    <div class="block">
+        <p>
+            I was driving by Olaf's bakery on my way to work when I saw the most delicious donut in the window --
+            I mean, the thing was dripping chocolatey goodness. So I went inside and demanded "I must have that donut!".
+            He said "sure that will be $30."
+        </p>
+    </div>
+    <div class="block">
+        <p>
+            I was driving by Olaf's bakery on my way to work when I saw the most delicious donut in the window --
+            I mean, the thing was dripping chocolatey goodness. So I went inside and demanded "I must have that donut!".
+            He said "sure that will be $30."
+        </p>
+    </div>
+
+</body>
+</html>

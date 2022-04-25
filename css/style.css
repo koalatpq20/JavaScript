@@ -1,0 +1,28 @@
+.categories{
+    text-align: left;
+    display: inline;
+}
+.categories ul{
+    list-style: square;
+    /* list-style-image: url('../img/agreement.png'); */    
+}
+.categories li{
+    background-color: rgb(165, 234, 234);
+    /* display: inline; */
+}
+.categories label{
+    display: block;
+    background-color: green;
+}
+.categories input[type="text"]{
+    width: 90%;
+}
+.categories input[type="button"]:hover{
+    background-color: blueviolet;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    box-sizing: border-box;
+}
